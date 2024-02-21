@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+html {
+   font-size: 62.5%
+}
+
+body {
+   background: rgb(3, 0, 31);
+   color: white;
+   font-family: 'Poppins', sans-serif;
+}
+
+.App{
+   min-height: 100vh;
+   display: flex;
+}
+
+
+.sideBar {
+  background-color: #121212; 
+  color: white; 
+  width: 23%;
+  padding: 10px;
+}
+
+
+.logo {
+  width: 50px; 
+  height: 50px;
+  margin-right: 10px; 
+  vertical-align: middle; 
+}
+
+.brand {
+  font-size: 1.5rem; 
+  font-weight: 800;
+}
+
+.upperSide{
+  padding: 0rem;
+  height: 70%;
+}
+
+.upperSideTop{
+  display: block;
+  align-items: center;
+  margin: 3rem;
+}
+
+/* Button styles */
+.midBtn {
+   background-color: #5A4BFF;
+   border: none;
+   color: white;
+   padding: 1.5rem;
+   font-size: 1.5rem;
+   width: 23rem;
+   height: 6rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   margin-top: 2rem;
+   margin-bottom: 3rem;
+   border-radius: 1.5rem;
+}
+
+.midBtn img{
+  height: 30px;
+  margin-right: 10px;
+}
+
+
+
+/* Query button styles */
+.query {
+  background: transparent;
+  color: white;
+  padding: 1.5rem; /* Adjust padding as needed */
+  margin: 10px 0; /* Add margin for spacing */
+  display: flex;
+  width: 23rem;
+  margin: 1rem auto ;
+  border-radius: 0.5rem;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.query img {
+  margin-right: 10px;
+  object-fit: cover;
+  height: 1.75rem
+}
+
+.lowerSide {
+  padding: 0.5rem;
+}
+
+/* Sidebar item styles */
+.listItems {
+  margin: 0.75rem; /* Add margin for spacing */
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.listItemsImg {
+  margin: 1rem;
+  margin-right: 1rem; /* Add spacing between image and text */
+}
+
+.main { 
+   min-height: calc(100vh -13rem);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 6rem 10rem;
+   margin-bottom: 0;
+}
+
+.chat{
+   margin: 1rem;
+   padding: 2rem 3rem;
+   font-size: 1.2rem;
+   display: flex;
+   align-items: flex-start;
+   text-align: justify;
+
+}
+
+.chats {
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 70rem;
+  height: calc(100vh - 17rem);
+}
+
+
+.chatImg{
+  object-fit: cover;
+  width: 3.5rem;
+  margin-right : 2rem;
+  border-radius: 0.5rem;
+}
+
+.bot {
+  background: rgb(28, 30, 58, 1);
+  width: fit-content;
+  border-radius: 0.5rem;
+}
+
+.chatFooter {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inp {
+  padding: 0.5rem;
+  background: rgba(28, 30, 58, 1);
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  width: 70rem;
+}
+
+.inp>input{
+  width: calc(100% - 3rem);
+  outline: none;
+  padding: 1.25rem;
+  color: white;
+}
+
+.inp>input,.Send {
+    background: transparent;
+    border: none;
+}
+
+.inp>input,.send {
+  background: transparent;
+  border: none;
+}
+
+
+ 
+.chatFooter>p{
+  margin: 2rem 0;
+}
